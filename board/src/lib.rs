@@ -120,7 +120,7 @@ impl Board {
     }
 
     pub fn is_full(&self) -> bool {
-        for i in 0..(self.size * self.size - 1) {
+        for i in 0..(self.size * self.size) {
             // If we hit a non-blank spot, it isn't full
             if self.spots[i] == ' ' {
                 return false
