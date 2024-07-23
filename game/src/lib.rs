@@ -8,6 +8,7 @@ pub fn play_game(board: &mut board::Board) -> Option<char> {
     let mut player = all_players.choose(&mut rand::thread_rng()).unwrap();
 
     loop {
+        println!(" ");
         println!("{}", board.to_string());
         println!("Enter move {}: ", player);
         let mut player_move = String::from("");
